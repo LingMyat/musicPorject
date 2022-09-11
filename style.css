@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: sans-serif;
+    user-select: none;
+}
+body {
+   background: rgb(207, 207, 207);
+   overflow: hidden;
+}
+h3 {
+    text-align: center;
+    color: #fff;
+    background: #fd878d;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    margin-top: 7px;
+}
+.row{
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.display {
+    display: none;
+}
+
+
+
+.container {
+    width: 330px;
+    height: 500px;
+    background: linear-gradient(#9ce3ff 0%,#fd878d 90%);
+    border-radius: 20px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.342);
+}
+
+
+.image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #fff,
+    0 0 2px #fff,
+    13px 13px 20px #31313163,
+    -10px -10px 20px #e6f6ff;
+}
+.time {
+    color: #fff;
+    margin-top: 8px;
+    text-align: center;
+}
+.progress {
+    width: 200px;
+    height: 4px;
+    
+    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.377);
+    margin: 0px auto 15px auto;
+}
+.progressBar {
+    width: 0px;
+    height: 100%;
+    background: #fff;
+}
+.nav {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: #fff;
+
+}
+.fa-times {
+    margin-right: 9px;
+}
+.ff {
+    font-size: 28px;
+}
+.title {
+    text-align: center;
+    padding: 0 5px;
+    font-size: 20px;
+    color: #fff;
+    height: 41.8px;
+    vertical-align: middle;
+    padding-top: 5px 5px 0px 5px;
+}
+
+.button {
+    text-align: center;
+}
+
+.fa {
+    font-size: 27px;
+    margin: 15px;
+    background: #fff;
+    -webkit-background-clip: text;
+    color: transparent;
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    padding: 7px;
+    vertical-align: middle;
+    cursor: pointer;
+    box-shadow: 
+    0px 0px 0px rgba(255, 255, 255, 0.842),
+    8px 8px 8px #ff5e66,
+    -3px -3px 15px #f0ecece7
+    ;
+}
+.fa-play
+ {
+    font-size: 27px;
+    padding: 8px 8px 8px 12px;
+    box-shadow: 
+    0px 0px 2px rgba(255, 255, 255, 0.842),
+    8px 8px 8px #ff5e66,
+    -3px -3px 15px #f0ecece7
+    ;
+
+}
+.fa-pause {
+    font-size: 27px;
+    padding: 8px 10px;
+    margin: 15px 15px;
+    box-shadow: 
+    0px 0px 2px rgba(255, 255, 255, 0.842),
+    8px 8px 8px #ff5e66,
+    -3px -3px 15px #f0ecece7
+    ;
+}
+
+.album {
+    width: 330px;
+    height: 220px;
+    background: rgba(255, 255, 255, 0.411);
+    border-radius: 20px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.342);
+    position: absolute;  
+}
+
+.album div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    font-size: 20px;
+    margin: 9px auto;
+    background-color: rgba(255, 255, 255, 0.726);
+    color: #000000bb;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.342);
+    
+}
+.album div:hover {
+    border: 3px solid #fd878d;
+}
+.songNames {
+    width: 330px;
+    height: 220px;
+    background: rgba(255, 255, 255, 0.411);
+    border-radius: 20px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.342);
+    position: absolute;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.songNames::-webkit-scrollbar{
+    width: 0px;
+}
+.songNames div {
+    width: 70%;
+    height: 33px;
+    font-size: 16px;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.726);
+    color: #000000bb;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.342);
+    padding: 4px;
+}
+.songNames div:hover {
+    border: 3px solid #fd878d;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000000bb;
+}
